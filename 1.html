@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			button{
+				width: 200px;
+				height: 200px;
+				font-size: 72px;
+			}
+		</style>
+	</head>
+	<body>
+		<button class='one'>one</button>
+		<button class='two'>two</button>
+		<button class='three'>three</button>
+		<br>
+		<img src="智能对象1.png" alt="" />
+		<script>
+			let one = document.querySelector('.one');
+			let two = document.querySelector('.two');
+			let three = document.querySelector('.three');
+			let img = document.querySelector('img')
+			one.addEventListener('click',function(){
+				img.src = '智能对象2.png'
+			})
+			two.addEventListener('click',function(){
+				img.src = '智能对象3.png'
+			})
+			three.addEventListener('click',function(){
+				img.src = '智能对象4.png'
+			})
+		</script>
+	</body>
+</html>
